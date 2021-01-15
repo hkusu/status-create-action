@@ -1,0 +1,35 @@
+name: 'Status Create Action'
+description: 'This is a GitHub Action to create commit statuses for a given SHA.'
+author: 'Hiroyuki Kusu'
+inputs:
+  sha:
+    description: ''
+    required: true
+  state:
+    description: ''
+    required: true
+  target-url:
+    description: ''
+    default: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    required: false
+  description:
+    description: ''
+    required: false
+  context:
+    description: ''
+    default: ${{ github.workflow }}
+    required: false
+  repository:
+    description: ''
+    default: ${{ github.repository }}
+    required: true
+  github-token:
+    description: ''
+    default: ${{ github.token }}
+    required: true
+outputs:
+  result:
+    description: '`success` or `failure` is set.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
