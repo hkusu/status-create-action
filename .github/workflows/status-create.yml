@@ -20,7 +20,7 @@ jobs:
         uses: ./
         id: status-create
         with:
-          sha: {{ github.event.pull_request.head.sha }}
+          sha: ${{ github.event.pull_request.head.sha }}
           state: success
           description: Passed
       - name: Show result
@@ -39,7 +39,7 @@ jobs:
         uses: ./
         id: status-create
         with:
-          sha: {{ github.sha }}
+          sha: ${{ github.sha }}
           state: success
           description: Passed
       - name: Show result
