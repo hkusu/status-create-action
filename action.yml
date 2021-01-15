@@ -1,6 +1,9 @@
 name: 'Status Create Action'
 description: 'This is a GitHub Action to create commit statuses for a given SHA.'
 author: 'Hiroyuki Kusu'
+branding:
+  icon: 'git-commit'
+  color: 'white'
 inputs:
   sha:
     description: ''
