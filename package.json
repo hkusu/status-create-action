@@ -1,6 +1,6 @@
 {
   "name": "status-create-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a GitHub Action to create commit statuses for a given SHA.",
   "main": "src/main.js",
   "author": "Hiroyuki Kusu <kusu0806@gmail.com>",
@@ -15,13 +15,13 @@
   "homepage": "https://github.com/hkusu/status-create-action#readme",
   "scripts": {
     "local": "NODE_ENV=local node src/main.js",
-    "package": "ncc build src/main.js -o dist"
+    "package": "ncc build src/main.js -o dist --source-map --license licenses.txt"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "axios": "^0.21.1"
+    "@actions/core": "^1.10.0",
+    "axios": "^1.3.6"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.20.5"
+    "@vercel/ncc": "^0.36.1"
   }
 }
