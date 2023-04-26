@@ -15,7 +15,7 @@ jobs:
       - name: Dump GitHub context
         run: echo '${{ toJson(github) }}'
       - name: Check out
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use this action
         uses: ./
         id: status-create
@@ -34,7 +34,7 @@ jobs:
       - name: Dump GitHub context
         run: echo '${{ toJson(github) }}'
       - name: Check out
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use this action
         uses: ./
         id: status-create
