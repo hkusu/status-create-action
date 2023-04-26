@@ -1,6 +1,6 @@
 {
   "name": "status-create-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a GitHub Action to create commit statuses for a given SHA.",
   "main": "src/main.js",
   "author": "Hiroyuki Kusu <kusu0806@gmail.com>",
