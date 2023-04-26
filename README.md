@@ -14,7 +14,7 @@ This is a GitHub Action to create commit statuses for a given SHA.
     context: My Workflow # default: '${{ github.workflow }}'
 ```
 
-About input parameters, see also https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#create-a-commit-status--parameters .
+About input parameters, see also https://docs.github.com/en/rest/commits/statuses?apiVersion=2022-11-28#create-a-commit-status .
 
 ### Result of action
 
